@@ -52,6 +52,7 @@ setup_args = dict(
     ],
 
     test_suite='{{ cookiecutter.repo_name }}.test',
+    test_loader='{{ cookiecutter.repo_name }}.test.loader:Loader',
     tests_require=[
     ],
 )
