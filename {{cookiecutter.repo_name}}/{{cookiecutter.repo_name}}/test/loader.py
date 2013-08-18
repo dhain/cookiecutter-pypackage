@@ -30,7 +30,7 @@ class Loader(object):
                 continue
             try:
                 docsuite = DocTestSuite(name)
-            except ValueError, err:
+            except ValueError as err:
                 if err.args[1] not in ['has no tests', 'has no docstrings']:
                     raise
                 continue
